@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio - Elwyn Nicole</title>
+
+    <!-- bootstrap css cdn link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap icon cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+
+    <!-- for adding animation to website we have use AOS library 
+    AOS Library css file cdn link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- jquery cdn link  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- navbar starts -->
+    <nav
+      id="navbar-top"
+      class="navbar navbar-expand-lg navbar-light bg-white sticky-top"
+    >
+      <div class="container-fluid px-5">
+        <a class="navbar-brand fw-bold fs-2" href="#" style="color: #d242be"
+          >Portfolio</a
+        >
+        <button
+          class="nav-menu d-md-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <i class="bi bi-menu-button-fill"></i>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutme">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar ends here -->
+
+    <!-- home section starts  -->
+    <section class="home pt-5 pb-5" id="home">
+      <div class="row justify-content-evenly align-middle">
+        <!-- here data-aos is used for adding aos animation  -->
+        <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
+          <h2 style="color: #d626d3">
+            Hello! I Am <br /><span class="c-orange">Elwyn Nicole</span>
+          </h2>
+          <p class="text-muted">
+            I am a Computer Science student of C3A in De La Salle Lipa. <br>
+            Get to know me using my portfolio!
+          </p>
+          <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+            Hire Me
+          </button>
+          <a href="" class="link ms-4 d-none">See My Work</a>
+        </div>
+        <div class="col-10 col-md-4 d-none d-md-block">
+          <img src="images/banner-01.webp" class="img-fluid" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- home section ends here -->
+
+    <!-- about me section starts -->
+    <section class="aboutme mt-5" id="aboutme">
+      <div class="heading text-center">
+        <small>About Me</small>
+        <h3>
+          My Field of <br />
+          Interests
+        </h3>
+      </div>
+      <div class="row justify-content-evenly mt-5">
+        <div class="col-10 col-md-4" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/JPCSLogo.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>JPCS</h4>
+              <p class="text-muted">
+                Junior Philippine Computer Society
+              </p>
+              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal1">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-10" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/Park Me.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Park Me</h4>
+              <p class="text-muted">
+                Park Me - Mobile Application
+              </p>
+              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal2">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-10" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/MusikalistaLogo.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Musikalista</h4>
+              <p class="text-muted">
+                DLSL Musikalista
+              </p>
+              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal3">Read More</a>
+            </div>
+          </div>
+    <!-- modals starts -->
+          <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                
+                  <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
+                
+                <div class="modal-body px-4">
+                  <div class="img">
+                    <img src="images/JPCSLogo.png" class="img-fluid" alt="">
+                  </div>
+                  <div class="content mt-3">
+                    <small>By Elwyn Nicole</small
+                      ><span class="text-muted ms-2">Aug 8,2024</span>
+                    <h4 class="card-title mt-3">JPCS</h4>
+                    <div class="social-links mt-4">
+                        <button href="" class="rounded-pill facebook">
+                          <i class="bi bi-facebook"></i>
+                        </button>
+                        <button href="" class="rounded-pill linkedin">
+                          <i class="bi bi-linkedin"></i>
+                        </button>
+                        <button href="" class="rounded-pill google">
+                          <i class="bi bi-google"></i>
+                        </button>
+                    </div>
+                    <p class="text-muted mt-3">Junior Philippine Computer Society is a PROF Organization of
+                      De La Salle Lipa composed of CS, EMC, IT, and ACT students.</p>
+                  </div>
+                </div>
+          
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                
+                  <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
+                
+                <div class="modal-body px-4">
+                  <div class="img">
+                    <img src="images/Park Me.png" class="img-fluid" alt="">
+                  </div>
+                  <div class="content mt-3">
+                    <small>By Elwyn Nicole </small
+                      ><span class="text-muted ms-2 ms-md-0">Jan 8,2024</span>
+                    <h4 class="card-title mt-3">Park Me</h4>
+                    <div class="social-links mt-4">
+                        <button href="" class="rounded-pill facebook">
+                          <i class="bi bi-facebook"></i>
+                        </button>
+                        <button href="" class="rounded-pill linkedin">
+                          <i class="bi bi-linkedin"></i>
+                        </button>
+                        <button href="" class="rounded-pill google">
+                          <i class="bi bi-google"></i>
+                        </button>
+                    </div>
+                    <p class="text-muted mt-3">Park Me is a mobile application made for De La Salle Lipa's Students to
+                      have access to available parking spaces near the campus.</p>
+                  </div>
+                </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                
+                  <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
+                
+                <div class="modal-body px-4">
+                  <div class="img">
+                    <img src="images/MusikalistaLogo.png" class="img-fluid" alt="">
+                  </div>
+                  <div class="content mt-3">
+                    <small>By Elwyn Nicole</small
+                      ><span class="text-muted ms-2 ms-md-0">Dec 8,2023</span>
+                    <h4 class="card-title mt-3">DLSL Musikalista</h4>
+                    <div class="social-links mt-4">
+                        <button href="" class="rounded-pill facebook">
+                          <i class="bi bi-facebook"></i>
+                        </button>
+                        <button href="" class="rounded-pill linkedin">
+                          <i class="bi bi-linkedin"></i>
+                        </button>
+                        <button href="" class="rounded-pill google">
+                          <i class="bi bi-google"></i>
+                        </button>
+                    </div>
+                    <p class="text-muted mt-3">The DLSL's Musikalista is a SPIN Organization of De La Salle Lipa which is a home to
+                      music lovers, musicians, singers, songwriters, etc.
+                      
+                      </p>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          
+
+        </div>
+      </div>
+    </section>
+    <!-- about me ends here -->
+
+
+    <!-- portfolio section starts here -->
+    <section class="portfolio" id="portfolio">
+      <div class="heading text-center pt-5">
+        <small>Creative Work</small>
+        <h3>Check My Portfolio</h3>
+      </div>
+
+      <div id="myBtnContainer" class="text-center mt-4">
+        <button class="filter-item" data-filter="all">All</button>
+        <button class="filter-item" data-filter="game">Game</button>
+        <button class="filter-item" data-filter="webapp">Web App</button>
+        <button class="filter-item" data-filter="website">Website</button>
+      </div>
+      <div class="portfolio-body">
+        <div class="row justify-content-evenly px-4">
+          <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/tetrisparody.png" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <button onclick="javascript:myFun()"> <h4 class="card-title">Tetris Game</h4> </button> <br>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">Game</span> <br />
+                <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal4">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img
+                src="images/calculator.png" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <button onclick="javascript:myFun()"> <h4 class="card-title">Calculator App</h4> </button> <br>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">Website</span
+                ><br />
+                <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal5">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 webapp all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/ebook.png" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <button onclick="javascript:myFun()"> <h4 class="card-title">EBook</h4> </button> <br>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">WebApp</span
+                ><br />
+                <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal6">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+<!-- modals starts -->
+<div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      
+        <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
+      
+      <div class="modal-body px-4">
+        <div class="img">
+          <img src="images/tetrisparody.png" class="img-fluid" alt="">
+        </div>
+        <div class="content mt-3">
+          <small>By Elwyn Nicole</small
+            ><span class="text-muted ms-2">Aug 8,2024</span>
+          <h4 class="card-title mt-3">Tetris Game</h4>
+          <div class="social-links mt-4">
+              <button href="" class="rounded-pill facebook">
+                <i class="bi bi-facebook"></i>
+              </button>
+              <button href="" class="rounded-pill linkedin">
+                <i class="bi bi-linkedin"></i>
+              </button>
+              <button href="" class="rounded-pill google">
+                <i class="bi bi-google"></i>
+              </button>
+          </div>
+          <p class="text-muted mt-3">The Tetris Game is a combination of contemporary arts and technology. 
+            The objective is to create magnificent artworks by playing the nostalgic game of tetris.
+            <br>  
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      
+        <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
+      
+      <div class="modal-body px-4">
+        <div class="img">
+          <img src="images/calculator.png" class="img-fluid" alt="">
+        </div>
+        <div class="content mt-3">
+          <small>By Elwyn Nicole </small
+            ><span class="text-muted ms-2 ms-md-0">Jan 8,2024</span>
+          <h4 class="card-title mt-3">Calculator App</h4>
+          <div class="social-links mt-4">
+              <button href="" class="rounded-pill facebook">
+                <i class="bi bi-facebook"></i>
+              </button>
+              <button href="" class="rounded-pill linkedin">
+                <i class="bi bi-linkedin"></i>
+              </button>
+              <button href="" class="rounded-pill google">
+                <i class="bi bi-google"></i>
+              </button>
+          </div>
+          <p class="text-muted mt-3">The Calculator App is designed for students 
+            and professionals to perform mathematical calculations. It is convenient because
+            it can be used anywhere and anytime.
+          </p>
+        </div>
+      </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      
+        <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
+      
+      <div class="modal-body px-4">
+        <div class="img">
+          <img src="images/ebook.png" class="img-fluid" alt="">
+        </div>
+        <div class="content mt-3">
+          <small>By Elwyn Nicole</small
+            ><span class="text-muted ms-2 ms-md-0">Dec 8,2023</span>
+          <h4 class="card-title mt-3">EBook</h4>
+          <div class="social-links mt-4">
+              <button href="" class="rounded-pill facebook">
+                <i class="bi bi-facebook"></i>
+              </button>
+              <button href="" class="rounded-pill linkedin">
+                <i class="bi bi-linkedin"></i>
+              </button>
+              <button href="" class="rounded-pill google">
+                <i class="bi bi-google"></i>
+              </button>
+          </div>
+          <p class="text-muted mt-3">The EBook WebApp is designed for people who loves reading. 
+            This WebApp enables readers to access books conveniently with their own devices on-hand. 
+            Bookworms will surely love this.
+            </p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+        </div>
+      </div>
+    </section>
+    <!-- portfolio section ends here -->
+
+
+    <!-- contact section starts -->
+    <section class="contact py-5" id="contact">
+      <div class="heading text-center">
+        <small>Get in Touch</small>
+        <h3>Any Questions? Feel Free to Contact</h3>
+      </div>
+      <div class="row justify-content-evenly mt-5">
+        <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-geo-alt-fill"></i>
+            </div>
+            <div class="col-11">
+              <p>123 Street, 3rd District, Bagumbs, 2024, Philippines</p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-telephone-fill"></i>
+            </div>
+            <div class="col-11">
+              <p>+06 9001122334</p>
+            </div>
+          </div>
+          <form>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-send-fill"></i>
+            </div>
+            <div class="col-11">
+              <p>elwyn_nicole_villegas@dlsl.edu.ph</p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-globe-americas"></i>
+            </div>
+            <div class="col-11">
+              <p>elwynnicole.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 col-10 mt-3 mt-md-0" data-aos="slide-left">
+          <div class="contact-form">
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="nameInput"
+                placeholder="Name"
+                required
+                minlength="5"
+                maxlength="20"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="emailInput"
+                placeholder="E-mail"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="mobileInput"
+                placeholder="Mobile No."
+                required
+                pattern="[0-9]{11}"
+              />
+            </div>
+            <div class="mb-3">
+              <textarea
+                class="form-control"
+                id="messageInput"
+                placeholder="Message"
+                rows="5"
+                required
+                minlength="15"
+                maxlength="400"
+              ></textarea>
+            </div>
+            <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+              Submit
+            </button>
+          </div>
+        </form>
+        </div>
+      </div>
+    </section>
+    <!-- contact section ends here -->
+
+      <!-- now we will make back to top button when user click on it it will be redirected to top page  -->
+    <button
+      type="button"
+      class="btn btn-floating btn-lg rounded-pill"
+      id="btn-back-to-top"
+    >
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- footer section starts  -->
+    <footer class="text-center text-muted py-4">
+      <h3 class="text-white pt-4" data-aos="fade-up">Portfolio</h3>
+      <div class="link-group mt-5" data-aos="fade-up">
+        <a href="#home">Home</a>
+        <div class="vr"></div>
+        <a href="#aboutme">About Me</a>
+        <div class="vr"></div>
+        <a href="#portfolio">Portfolio</a>
+        <div class="vr"></div>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="social-links mt-5" data-aos="fade-up">
+        <button href="" class="rounded-pill facebook">
+          <i class="bi bi-facebook"></i>
+        </button>
+        <button href="" class="rounded-pill linkedin">
+          <i class="bi bi-linkedin"></i>
+        </button>
+        <button href="" class="rounded-pill google">
+          <i class="bi bi-google"></i>
+        </button>
+      </div>
+      <hr class="text-muted my-4" />
+
+      <p>Copyright 2024 Portfolio | All Rights Reserved.</p>
+    </footer>
+    <!-- footer section ends here -->
+
+      <!-- bootstrap javascript cdn link  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS library javascript link  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      // initializing AOS library
+      AOS.init({
+        duration: 1000,
+        offset: 50,
+      });
+    </script>
+    <!-- custom js file linking -->
+    <script src="js/script.js"></script>
+    
+    <script>
+    const form = document.querySelector('form');
+
+    form.addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form submission
+
+    const nameInput = document.getElementById('nameInput');
+    const emailInput = document.getElementById('emailInput');
+    const mobileInput = document.getElementById('mobileInput');
+
+    if (!nameInput || !emailInput || !mobileInput) {
+      console.error('Form elements not found');
+      return;
+    }
+
+    const nameValue = nameInput.value;
+    const emailValue = emailInput.value;
+    const mobileValue = mobileInput.value;
+
+    if (!emailIsValid(emailValue)) {
+      alert('Please enter a valid email address.');
+      return;
+    }
+
+    // If validation passes, submit the form
+        return true;
+     });
+
+    function emailIsValid(email) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+     }
+    </script>
+
+
+  
+
+  </body>
+</html> 
